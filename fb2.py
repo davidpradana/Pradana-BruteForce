@@ -27,10 +27,10 @@ except:
 print('\n---------- Selamat Datang di PRADANA HACKER ----------\n')
 file=open('passwords.txt','r')
 
-email=str(raw_input('Enter Email/Username : ').strip())
+email=str(raw_input('Masukkan Email/Username Anda : ').strip())
 
 print "\nTarget Email ID : ",email
-print "\nTrying Passwords from list ..."
+print "\nHarap Mencari Sedang Mencari Passwords ..."
 
 i=0
 while file:
