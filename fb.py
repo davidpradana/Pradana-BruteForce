@@ -45,13 +45,13 @@ def function(email,passw,i):
 		return True
 	return False
 
-print('\n---------- Welcome To Pradana Hacker ----------\n')
+print('\n---------- Selamat Datang di PRADANA HACKER ----------\n')
 file=open('passwords.txt','r')
 
-email=str(raw_input('Enter Email/Username : ').strip())
+email=input('Enter Email/Username : ')
 
-print "\Masukkan Email atau ID : ",email
-print "\Tunggu sedang mencari Passwords..."
+print("\nTarget Email ID : ",email)
+print("\nTrying Passwords from list ...")
 
 i=0
 while file:
