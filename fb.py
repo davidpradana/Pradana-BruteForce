@@ -48,7 +48,7 @@ def function(email,passw,i):
 print('\n---------- Selamat Datang di PRADANA HACKER ----------\n')
 file=open('passwords.txt','r')
 
-email=input('Enter Email/Username : ')
+email=input('Masukkan Email/Username Anda : ')
 
 print("\nTarget Email ID : ",email)
 print("\nTrying Passwords from list ...")
