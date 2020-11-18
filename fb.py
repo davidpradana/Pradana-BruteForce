@@ -51,7 +51,7 @@ file=open('passwords.txt','r')
 email=input('Masukkan Email/Username Anda : ')
 
 print("\nTarget Email ID : ",email)
-print("\nTrying Passwords from list ...")
+print("\nSedang Mencari Password ...")
 
 i=0
 while file:
