@@ -1,0 +1,23 @@
+#!/bin/bash
+# injek monitor Libernet by PRADANA-Pro
+
+#stop libernet
+stopLibernet(){
+    curl -d '{"action":"stop_libernet"}' -H "Content-Type: application/json" -X POST http://192.168.1.1/libernet/api.php
+}
+
+#restart service
+restartinjek (){
+stopLibernet
+sleep 5
+killall -q servicepradana
+screen -AmdS serviceinjekmon /usr/bin/servicepradana
+}
+
+if [ "$1" != "" ]; then
+echo "$1" > /root/pradana.txt
+cat /root/pradana.txt
+restartinjek
+else
+restartinjek
+fi
